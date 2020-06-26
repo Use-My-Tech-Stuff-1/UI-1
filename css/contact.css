@@ -136,16 +136,10 @@ body {
   display: flex;
   font-size: 3rem;
   justify-content: flex-start;
-  margin-right: 30rem;
+  margin-right: 40rem;
   margin-bottom: 3rem;
-  color: #00FF41;
-}
-.container-home p {
   color: #FFFFFF;
   font-family: 'Orbitron', sans-serif;
-  font-size: 2rem;
-  margin-top: 3rem;
-  margin-left: 7rem;
 }
 .navigation {
   text-align: flex-start;
@@ -183,12 +177,12 @@ body {
 .logo {
   display: flex;
   justify-content: flex-start;
-  margin-left: 5rem;
+  margin-left: 3rem;
   margin-top: -4.5rem;
-  width: 125%;
+  width: 126rem;
 }
 .logo img {
-  width: 120rem;
+  width: 1000rem;
   height: 35rem;
 }
 .logo p {
@@ -216,7 +210,7 @@ body {
   font-size: 9rem;
   font-weight: normal;
   line-height: 2em;
-  right: 65rem;
+  right: 68rem;
   margin-top: 12rem;
 }
 .rounded-social-buttons-body a:hover {
@@ -233,16 +227,6 @@ body {
   bottom: 28rem;
   width: 100%;
   text-align: center;
-}
-.img-text2 {
-  color: #FFFFFF;
-  font-family: 'Orbitron', sans-serif;
-  display: flex;
-  font-size: 2rem;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 10rem;
-  width: 100%;
 }
 .middle-section {
   display: flex;
@@ -293,7 +277,8 @@ body {
   text-align: center;
   display: flex;
   justify-content: flex-end;
-  margin-right: 3rem;
+  margin-right: 1rem;
+  margin-top: 2.3rem;
   font-size: 10rem;
 }
 .rounded-social-buttons a {
@@ -324,4 +309,192 @@ body {
   transform: rotate(360deg);
   color: #000000;
   background: #00FF41;
+}
+@media (max-width: 500px) {
+  .header {
+    margin-top: 2rem;
+    margin-bottom: -5rem;
+    background: #000000;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .header p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    color: #FFFFFF;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+  }
+  .navigation {
+    text-align: flex-start;
+    background: #000000;
+    background-color: transparent;
+    color: #00FF41;
+    font-size: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-top: 1rem;
+  }
+  .navigation a {
+    box-shadow: 0px 11px 14px -7px #00FF41;
+    background-color: transparent;
+    border: 6px solid #00FF41;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-top: -10rem;
+    margin-left: 3rem;
+    top: 1000rem;
+  }
+  .navigation a:hover {
+    color: #000000;
+    background-color: #00FF41;
+  }
+  .navigation a:hover:active {
+    position: relative;
+    top: 1px;
+  }
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+    margin-top: -4.5rem;
+  }
+  .logo img {
+    width: 28rem;
+    height: 35rem;
+  }
+  .logo p {
+    font-family: 'Orbitron', sans-serif;
+    color: #00FF41;
+    margin-top: 6.5rem;
+    margin-left: 2rem;
+  }
+  .img-text {
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 4rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    text-align: left;
+    right: -2rem;
+  }
+  .middle-section {
+    display: flex;
+    color: #00FF41;
+    width: 100%;
+    margin: 1rem auto;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+  }
+  .middle-section li {
+    text-align: center;
+    margin: 1rem 1rem;
+    border-radius: 8px;
+    background-color: black;
+    opacity: 0.9;
+  }
+  .middle-section .caption {
+    text-align: center;
+  }
+  .footer-text {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    flex-flow: column wrap;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .footer-text li a {
+    flex-flow: column wrap;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin: 10rem;
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+  }
+  .footer-text li a:hover {
+    color: #00FF41;
+  }
+  .rounded-social-buttons-body {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 10rem;
+  }
+  .rounded-social-buttons-body a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3rem;
+    height: 4.5rem;
+    margin: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 6rem;
+    font-weight: normal;
+    line-height: 2em;
+    right: 26rem;
+    margin-top: 15rem;
+  }
+  .rounded-social-buttons-body a:hover {
+    color: #00FF41;
+  }
+  .rounded-social-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+    font-size: 10rem;
+    background: #000000;
+    bottom: 10rem;
+  }
+  .rounded-social-buttons a {
+    bottom: -6rem;
+    right: 0.6rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background: #000000;
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-top: -47.5rem;
+  }
+  .rounded-social-buttons a:hover,
+  .rounded-social-buttons a focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: #000000;
+    background: #00FF41;
+  }
 }
