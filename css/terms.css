@@ -136,7 +136,7 @@ body {
   display: flex;
   font-size: 3rem;
   justify-content: flex-start;
-  margin-right: 30rem;
+  margin-right: 40rem;
   margin-bottom: 3rem;
   color: #00FF41;
 }
@@ -187,7 +187,7 @@ body {
   margin-top: -4.5rem;
 }
 .logo img {
-  width: 100rem;
+  width: 87rem;
   height: 35rem;
 }
 .logo p {
@@ -216,7 +216,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   bottom: 10rem;
-  width: 100%;
+  width: 80%;
 }
 .middle-section {
   display: flex;
@@ -289,7 +289,7 @@ body {
   transition: all 0.5s ease;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
-  margin-top: -7.5rem;
+  margin-top: -50rem;
 }
 .rounded-social-buttons a:hover,
 .rounded-social-buttons a focus {
