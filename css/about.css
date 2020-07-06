@@ -187,7 +187,7 @@ body {
   margin-top: -4.5rem;
 }
 .logo img {
-  width: 87rem;
+  width: 99rem;
   height: 35rem;
 }
 .logo p {
@@ -204,19 +204,37 @@ body {
   font-size: 3rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: 28rem;
+  bottom: 40rem;
   width: 100%;
   text-align: center;
 }
-.img-text2 {
-  color: #FFFFFF;
-  font-family: 'Orbitron', sans-serif;
+.container {
   display: flex;
-  font-size: 2rem;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 10rem;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: 5rem;
   width: 80%;
+  margin-top: 10rem;
+}
+.container img {
+  width: 100%;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.container img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.container .description {
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
 }
 .middle-section {
   display: flex;
@@ -299,7 +317,7 @@ body {
   color: #000000;
   background: #00FF41;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 100px) {
   .header {
     margin-top: 2rem;
     margin-bottom: -9rem;
@@ -352,11 +370,11 @@ body {
   .logo {
     display: flex;
     justify-content: flex-start;
-    margin-left: 1rem;
+    margin-left: -0.5rem;
     margin-top: -4.5rem;
   }
   .logo img {
-    width: 96%;
+    width: 100%;
     height: 30rem;
   }
   .logo p {
@@ -374,20 +392,37 @@ body {
     padding: 8px 12px;
     position: absolute;
     top: 22rem;
-    width: 100%;
+    width: 80%;
     text-align: center;
-    left: 5rem;
+    left: 3rem;
   }
-  .img-text2 {
-    color: #FFFFFF;
-    font-family: 'Orbitron', sans-serif;
+  .container {
     display: flex;
-    justify-content: flex-start;
-    font-size: 1.2rem;
-    top: 30rem;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 3.6rem;
+    width: 80%;
+    margin-top: 10rem;
+  }
+  .container img {
+    width: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: all 100ms ease-out;
+  }
+  .container img:hover {
+    transform: scale(1.04);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  .container .description {
+    color: #FFFFFF;
+    font-size: 2rem;
     text-align: center;
-    right: 2rem;
-    width: 90%;
+    font-family: 'Orbitron', sans-serif;
   }
   .middle-section {
     display: flex;
@@ -401,7 +436,7 @@ body {
     text-align: center;
     margin: 1rem 1rem;
     border-radius: 8px;
-    background-color: black;
+    background-color: #000000;
     opacity: 0.9;
   }
   .middle-section .caption {

@@ -126,19 +126,16 @@ a{
   }  
  }
 }
-
 .logo{
-    display:flex;
-    justify-content:@start;
-    margin-left:@medium;
-    margin-top:@medium*-1.5;
-    width:@xlarge *12.6;
-  img{
-    width:@xlarge* 100;
-
-    height:@xlarge*3.5;
-    
-  }
+  display:flex;
+  justify-content:@start;
+  margin-left:@medium;
+  margin-top:@medium*-1.5;
+img{
+  width:@xlarge *9.9;
+  height:@xlarge*3.5;
+  
+}
   p{
     font-family:@tech-font;
     color:@matrix;
@@ -148,29 +145,25 @@ a{
 }
 .rounded-social-buttons-body {
   text-align: center;
-  display:flex;
-  justify-content:@start;
   font-size:@xlarge;
+  margin-left:@xlarge*1.5;
+  margin-top:@large ;
   a{
-  display: inline-block;
-  position: relative;
   cursor: pointer;
-  width: @medium;
+  width: @perfect;
   height: @medium*1.5;
-  margin:@large;
   text-decoration: none;
   text-align: center;
   color: @white;
   font-size: @medium *3;
   font-weight: normal;
   line-height: 2em;
-  right:@xlarge*6.8;
-  margin-top:@xlarge *1.2; 
     &:hover{
       color:  @matrix;
     }
   }
 }
+
 .img-text{
   color:@white;
   font-family:@tech-font;
@@ -182,6 +175,7 @@ a{
   bottom: @xlarge *2.8;
   width: 100%;
   text-align: center;
+  top:@xlarge*1.2;
   
 }
 
@@ -269,25 +263,23 @@ a{
     }
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width:100px) {
 
   .header{
           margin-top:@small *2;
-          margin-bottom:@small *-5;
+          margin-bottom:@small *-9;
           background:@black;
           display:flex;
+  
           flex-direction:row;
-          width:100%;
-
         p{  
             font-family:@tech-font;
             font-size:@small *2;
-            margin-bottom:@xlarge;
             color:@white;
-          margin-right:@large;
-          margin-left:@large;
-          margin-top:@small;
-
+            margin-bottom:@xlarge;
+            margin-right:@small;
+            margin-left:@large;
+            margin-top:@medium;
           }
         }
   
@@ -300,7 +292,8 @@ a{
     display:flex;
     justify-content:flex-end;
     align-items:baseline;
-    margin-top:@small;
+    margin-bottom:@xlarge;
+    margin-top:@medium;
   a{
       box-shadow: 0px 11px 14px -7px @matrix;
       background-color:transparent;
@@ -312,9 +305,7 @@ a{
       font-family:@tech-font;
       color: @white;
       font-size:@small;
-      margin-top:@small*-10;
        margin-left:@medium;
-       top:@xlarge*100;
       &:hover{
        color:@black;
        background-color:@matrix;
@@ -329,11 +320,12 @@ a{
   .logo{
       display:flex;
       justify-content:@start;
-      margin-left:@small *1.5;
+      margin-left:@small *-.5;
       margin-top:@medium*-1.5;
+  
     img{
-      width:@xlarge *2.8;
-      height:@xlarge*3.5;
+      width:100%;
+      height:@xlarge*3;
       
     }
     p{
@@ -343,21 +335,73 @@ a{
       margin-left:@small*2;
     }
   }
+  .rounded-social-buttons-body {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    // font-size:@xlarge;
+    margin-left:@small*-18;
+    margin-top:@xlarge;
+    a{
+    cursor: pointer;
+    // width: @perfect;
+    height: @medium*1.5;
+    text-decoration: none;
+    text-align: center;
+    color: @white;
+    font-size: @medium *3;
+    font-weight: normal;
+    line-height: 2em;
+      &:hover{
+        color:  @matrix;
+      }
+    }
+  }
   .img-text{
     color:@white;
     font-family:@tech-font;
     display:flex;
     justify-content:flex-start;
-    font-size: @small *4;
+    font-size: @small *2.5;
     padding: 8px 12px;
     position: absolute;
-    top: @xlarge*2;
+    top: @xlarge *2.2;
     width: 100%;
-    text-align: left;
-    right: @small*-2;
-    
+    text-align: center;
+    left:@large*1.2;
+
   }
-.middle-section{
+ 
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: @medium*1.2;
+    width:80%;
+    margin-top:@xlarge;
+  img {
+      width: 100%;
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      transition: all 100ms ease-out;
+      &:hover{
+        transform: scale(1.04);
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+      }
+    }
+    .description{
+    
+      color:@white;
+      font-size:@small *2;
+      text-align: center;
+      font-family: @tech-font;
+    }
+  }
+  .middle-section{
     display: flex;
     color:@matrix;
     width: 100%;
@@ -368,7 +412,7 @@ a{
     text-align: @center;
     margin: @small @small;
     border-radius: 8px;
-    background-color: black;
+    background-color:@black;
     opacity: 0.9;
   }
     .caption {
@@ -399,32 +443,6 @@ a{
       }
     }
    }
-   .rounded-social-buttons-body {
-    text-align: center;
-    display:flex;
-    justify-content:@start;
-    font-size:@xlarge;
-
-    a{
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: @medium;
-    height: @medium*1.5;
-    margin:@small*2;
-    text-decoration: none;
-    text-align: center;
-    color: @white;
-    font-size: @medium*2;
-    font-weight: normal;
-    line-height: 2em;
-    right:@large* 5.2;
-    margin-top:@xlarge *1.5; 
-      &:hover{
-        color:  @matrix;
-      }
-    }
-  }
     .rounded-social-buttons {
     text-align: center;
     display:flex;
@@ -432,7 +450,7 @@ a{
     margin-right:@small * 2;
     font-size:@xlarge;
     background:@black;
-      bottom:@xlarge;
+    bottom:@small*56;
     a{
     bottom:@small *-6;
     right:@small*.6;
@@ -453,7 +471,9 @@ a{
     transition: all 0.5s ease;
     margin-right: 0.25rem;
     margin-bottom: 0.25rem;
-    margin-top:@xlarge *-4.75; 
+    margin-top:@xlarge *-3.9; 
+    bottom:@small*3;
+
     &:hover,
       focus{
         -webkit-transform: rotate(360deg);
@@ -464,6 +484,7 @@ a{
       }
     }
   }
-  }
+}
+
   
   
