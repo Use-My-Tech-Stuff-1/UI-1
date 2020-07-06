@@ -133,7 +133,7 @@ a{
     margin-left:@medium;
     margin-top:@medium*-1.5;
   img{
-    width:@xlarge *8.7;
+    width:@xlarge *50;
     height:@xlarge*3.5;
     
   }
@@ -169,6 +169,7 @@ a{
   bottom: @xlarge *1.5;
   width: 50%;
   text-align: left; 
+  top:@xlarge *1.8;
 }
 .img-text3{
   color:@white;
@@ -180,7 +181,7 @@ a{
   padding: 8px 12px;
   position: absolute;
   left:@small;
-  bottom: @large;
+  bottom: @xlarge *1.5;
   width: 100%;
   a{
     box-shadow: 0px 11px 14px -7px @matrix;
@@ -291,7 +292,7 @@ a{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width:100px) {
 
 .header{
         margin-top:@small *2;

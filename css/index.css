@@ -182,7 +182,7 @@ body {
   margin-top: -4.5rem;
 }
 .logo img {
-  width: 87rem;
+  width: 500rem;
   height: 35rem;
 }
 .logo p {
@@ -215,6 +215,7 @@ body {
   bottom: 15rem;
   width: 50%;
   text-align: left;
+  top: 18rem;
 }
 .img-text3 {
   color: #FFFFFF;
@@ -226,7 +227,7 @@ body {
   padding: 8px 12px;
   position: absolute;
   left: 1rem;
-  bottom: 5rem;
+  bottom: 15rem;
   width: 100%;
 }
 .img-text3 a {
@@ -333,7 +334,7 @@ body {
   color: #000000;
   background: #00FF41;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 100px) {
   .header {
     margin-top: 2rem;
     margin-bottom: -9rem;
